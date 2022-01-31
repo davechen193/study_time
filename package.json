@@ -1,0 +1,21 @@
+{
+  "name": "search aid",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^1.8.4",
+    "electron-packager": "^15.4.0"
+  },
+  "dependencies": {
+    "child_process": "latest",
+    "ls": "latest",
+    "fs": "latest"
+  }
+}

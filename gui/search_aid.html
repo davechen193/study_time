@@ -1,0 +1,39 @@
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script id="script1" src="linkers/search_aid.js"></script>
+</head>
+<style>
+  body {
+    background-image: url('images/photo-library.jpeg');
+    background-size: contain;
+  }
+  div.wrapper {
+    background: rgba(223, 139, 34, 0.658);
+    border: 1px solid #333333;
+  }
+  div.box {
+    overflow: scroll;
+  }
+  a {
+    display:block;width:400px;
+    color:purple;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+</style>
+<body>
+  <br>
+  <div class="container">
+    <h2 style="color:black">Search Aid</h2>
+    <br/>
+    <p style="color:black;   font:bold">What are we looking for today?:</p>
+    <textarea id="input" name="w3review" rows="1" cols="100"/></textarea>
+    <br/><br/><br/>
+    <button class="btn btn-success" onclick="render()">submit</button>
+    <br/><br/>
+  </div>
+  <div class="wrapper">
+    <h3>Results</h3>
+    <div class="box" id="result" ></div>
+  </div>
+<body>
